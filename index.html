@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="body-calc">
+        <div class="calc-screen">
+          <div class="op-screen"></div>
+          <input type="text" class="type-screen"></input>
+        </div>
+        <div class="button-row-top">
+          <button class="button-top" id="clear">C</button>
+          <button class="button-top" id="clear-entry">CE</button>
+          <button class="button-top" id="backspace">⌫</button>
+        </div>
+        <div class="button-row">
+          <button onclick="addNumber()" id="number-button" class="button">7</button>
+          <button onclick="addNumber()" id="number-button" class="button">8</button>
+          <button onclick="addNumber()" id="number-button" class="button">9</button>
+          <button onclick="addNumber()" id="number-button" class="button">×</button>
+        </div>
+        <div class="button-row">
+          <button onclick="addNumber()" id="number-button" class="button">4</button>
+          <button onclick="addNumber()" id="number-button" class="button">5</button>
+          <button onclick="addNumber()" id="number-button" class="button">6</button>
+          <button onclick="addNumber()" id="number-button" class="button">÷</button>
+        </div>
+        <div class="button-row">
+          <button onclick="addNumber()" id="number-button" class="button">1</button>
+          <button onclick="addNumber()" id="number-button" class="button">2</button>
+          <button onclick="addNumber()" id="number-button" class="button">3</button>
+          <button onclick="addNumber()" id="number-button" class="button">+</button>
+        </div>
+        <div class="button-row">
+          <button onclick="addNumber()" id="number-button" class="button">=</button>
+          <button onclick="addNumber()" id="number-button" class="button">0</button>
+          <button onclick="addNumber()" id="number-button" class="button">,</button>
+          <button onclick="addNumber()" id="number-button" class="button">-</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/app.js"></script>
+
+
+  </body>
+</html>
