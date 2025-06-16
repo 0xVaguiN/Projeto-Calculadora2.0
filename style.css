@@ -28,6 +28,7 @@ body {
     border: solid 3px #9374af;
     border-radius: 28px;
     box-shadow: 0 5px 15px -1px #5d4672;
+    padding-bottom: 10px;
 }
 
 .calc-screen {
@@ -79,11 +80,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 400px;
+    width: auto;
     height: 70px;
     padding: 4px;
-    margin: 9px;
+    margin: 5px;
     margin-left: 17px;
+    margin-right: 17px;
     background-color: #d7c2eb;
     border-radius: 17px;
     border-right: solid 2px #835aa7;
@@ -117,11 +119,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 400px;
+    width: auto;
     height: auto;
     padding: 4px;
     margin: 9px;
     margin-left: 17px;
+    margin-right: 17px;
     background-color: #d7c2eb;
     border-radius: 17px;
     border-right: solid 2px #835aa7;
