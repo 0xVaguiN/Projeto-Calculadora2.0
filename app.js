@@ -1,4 +1,4 @@
-/* Calculator state variables
+Calculator state variables
 let currentNumber = "0"
 let previousNumber = ""
 let operator = ""
@@ -244,4 +244,3 @@ function handleKeyboard(event) {
 
 // Initialize calculator when page loads
 document.addEventListener("DOMContentLoaded", initCalculator)
-*/
