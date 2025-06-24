@@ -10,8 +10,8 @@
     <div class="container">
       <div class="body-calc">
         <div class="calc-screen">
-          <div class="op-screen"></div>
-          <input type="text" class="type-screen"></input>
+          <div class="op-screen" id="operation-display"></div>
+          <input type="text" class="type-screen" id="main-display" readonly></input>
         </div>
         <div class="button-row-top">
           <button class="button-top" id="clear">C</button>
@@ -19,33 +19,33 @@
           <button class="button-top" id="backspace">⌫</button>
         </div>
         <div class="button-row">
-          <button onclick="addNumber()" id="number-button" class="button">7</button>
-          <button onclick="addNumber()" id="number-button" class="button">8</button>
-          <button onclick="addNumber()" id="number-button" class="button">9</button>
-          <button onclick="addNumber()" id="number-button" class="button">×</button>
+          <button class="button-number" data-number="7">7</button>
+          <button class="button-number" data-number="8">8</button>
+          <button class="button-number" data-number="9">9</button>
+          <button class="button-operator" data-operator="×">×</button>
         </div>
         <div class="button-row">
-          <button onclick="addNumber()" id="number-button" class="button">4</button>
-          <button onclick="addNumber()" id="number-button" class="button">5</button>
-          <button onclick="addNumber()" id="number-button" class="button">6</button>
-          <button onclick="addNumber()" id="number-button" class="button">÷</button>
+          <button class="button-number" data-number="4">4</button>
+          <button class="button-number" data-number="5">5</button>
+          <button class="button-number" data-number="6">6</button>
+          <button class="button-operator" data-operator="÷">÷</button>
         </div>
         <div class="button-row">
-          <button onclick="addNumber()" id="number-button" class="button">1</button>
-          <button onclick="addNumber()" id="number-button" class="button">2</button>
-          <button onclick="addNumber()" id="number-button" class="button">3</button>
-          <button onclick="addNumber()" id="number-button" class="button">+</button>
+          <button class="button-number" data-number="1">1</button>
+          <button class="button-number" data-number="2">2</button>
+          <button class="button-number" data-number="3">3</button>
+          <button class="button-operator" data-operator="+">+</button>
         </div>
         <div class="button-row">
-          <button onclick="addNumber()" id="number-button" class="button">=</button>
-          <button onclick="addNumber()" id="number-button" class="button">0</button>
-          <button onclick="addNumber()" id="number-button" class="button">,</button>
-          <button onclick="addNumber()" id="number-button" class="button">-</button>
+          <button class="button-operator" id="equals">=</button>
+          <button class="button-number" data-number="0">0</button>
+          <button class="button-operator" id="decimal">,</button>
+          <button class="button-operator" data-operator="-">-</button>
         </div>
       </div>
     </div>
 
-    <script src="src/js/app.js"></script>
+    <script src="app.js"></script>
 
 
   </body>

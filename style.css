@@ -10,6 +10,26 @@ body {
     height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+    .body-calc {
+        position: fixed;
+        margin: 0;
+        padding: 10px;
+    }
+    .calc-screen {
+        width: 100%;
+        height: 150px;
+    }
+    .op-screen, .type-screen {
+        width: 100%;
+    }
+    .button-row, .button-row-top {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -44,7 +64,7 @@ body {
 
 .op-screen {
     width: auto;
-    height: 42px;
+    height: 28px;
     text-align: right;
     font-family: 'Borel', cursive;
     font-weight: 400;
@@ -58,7 +78,7 @@ body {
     border-bottom-right-radius: none;
     padding: 3px;
     padding-right: 14px;
-    padding-top: 7px;
+    padding-top: 10px;
     border-bottom: dotted 2px;
 }
 
@@ -93,7 +113,7 @@ body {
     /*transition: all 0.2s ease-in-out;*/
 }
 
-.button {
+.button-number, .button-operator {
     display: flex;
     background-color: #d7c2eb;
     color: #383085;
@@ -155,12 +175,8 @@ body {
     transition: all 0.4s ease;
 }
 
-.button:hover {
+.button-number:hover, .button-operator:hover, .button-top:hover {
     transform: scale(0.8);
-    background-color: #a58dbb;
-}
+    background-color: #bda3d6;
 
-.button-top:hover {
-    transform: scale(0.8);
-    background-color: #a58dbb;
 }
