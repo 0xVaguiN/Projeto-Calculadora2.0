@@ -178,5 +178,4 @@ body {
 .button-number:hover, .button-operator:hover, .button-top:hover {
     transform: scale(0.8);
     background-color: #bda3d6;
-
 }
